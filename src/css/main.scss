@@ -1,0 +1,52 @@
+$primary-color: #21ba45;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.textInput {
+  input {
+    margin: 5px 50px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+  button {
+    cursor: pointer;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    background-color: $primary-color;
+  }
+}
+
+.memeImg {
+  .toptext {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+      -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+      2px 2px 5px #000;
+  }
+  .bottomtext {
+    @extend .toptext;
+    left: 12%;
+    transform: translateY(-120%);
+    margin: 0px 0px;
+  }
+}
